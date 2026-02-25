@@ -1,0 +1,12 @@
+{
+  "name": "wafeq-api",
+  "description": "Comprehensive Wafeq accounting & e-invoicing API reference. Covers all 150+ endpoints: invoices, contacts, accounts, payments, expenses, reports, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yordi de Kleijn"
+  },
+  "homepage": "https://github.com/YordiLorenzo/wafeq-api-plugin",
+  "repository": "https://github.com/YordiLorenzo/wafeq-api-plugin",
+  "license": "MIT",
+  "keywords": ["wafeq", "accounting", "e-invoicing", "api", "saudi-arabia", "uae", "zatca", "middleware"]
+}
