@@ -14,12 +14,12 @@ Two supported methods:
 
 ### 1. Private Key (API Key) - Recommended for Own Organization
 
-- **Header:** `Authorization: Api-Key <api_key>`
+- **Header:** `Authorization: Api-Key $WAFEQ_API_KEY`
 - **Obtain keys from:** `https://app.wafeq.com/c/api-keys`
 
 ```bash
 curl --location --request GET 'https://api.wafeq.com/v1/organization/' \
-  --header 'Authorization: Api-Key <api_key>'
+  --header 'Authorization: Api-Key $WAFEQ_API_KEY'
 ```
 
 ### 2. OAuth2 - Recommended for Third-Party Integrations
@@ -155,7 +155,7 @@ POST https://api.wafeq.com/v1/api-invoices/bulk_send/
 ### Authentication
 
 ```
-Authorization: Api-Key <api_key>
+Authorization: Api-Key $WAFEQ_API_KEY
 Content-Type: application/json
 ```
 
@@ -203,7 +203,7 @@ Content-Type: application/json
 
 ```
 POST https://api.wafeq.com/v1/contacts/
-Authorization: Api-Key <YOUR_API_KEY>
+Authorization: Api-Key $WAFEQ_API_KEY
 ```
 
 ```json
@@ -218,7 +218,7 @@ Authorization: Api-Key <YOUR_API_KEY>
 
 ```
 GET https://api.wafeq.com/v1/accounts/
-Authorization: Api-Key <YOUR_API_KEY>
+Authorization: Api-Key $WAFEQ_API_KEY
 ```
 
 Filter by code (e.g., `"4000"`), exact name match, or classification type (`revenue`/`asset`).
@@ -227,7 +227,7 @@ Filter by code (e.g., `"4000"`), exact name match, or classification type (`reve
 
 ```
 POST https://api.wafeq.com/v1/invoices/
-Authorization: Api-Key <YOUR_API_KEY>
+Authorization: Api-Key $WAFEQ_API_KEY
 X-Wafeq-Idempotency-Key: <uuid-v4>
 ```
 
@@ -255,7 +255,7 @@ X-Wafeq-Idempotency-Key: <uuid-v4>
 
 ```
 POST https://api.wafeq.com/v1/payments/
-Authorization: Api-Key <YOUR_API_KEY>
+Authorization: Api-Key $WAFEQ_API_KEY
 X-Wafeq-Idempotency-Key: <uuid-v4>
 ```
 
