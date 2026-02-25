@@ -54,17 +54,27 @@ Claude will automatically use this skill when you mention Wafeq, invoicing, or r
 - **Idempotency:** `X-Wafeq-Idempotency-Key: <uuid-v4>`
 - **Docs:** https://developer.wafeq.com
 
+## Setup
+
+```bash
+export WAFEQ_API_KEY='your-key-here'
+# Validate:
+./scripts/setup.sh
+```
+
 ## Files
 
-| File | Lines | Content |
-|------|-------|---------|
-| `SKILL.md` | 88 | Main entrypoint, quick reference, common workflows |
-| `core-concepts.md` | 352 | Auth, OAuth2, idempotency, guides, use cases |
-| `enums.md` | 348 | All 18 enum types with values |
-| `invoices.md` | 1,007 | Standard + bulk + simplified invoices |
-| `accounts-banking-contacts.md` | 739 | Accounts, banking, contacts, beneficiaries |
-| `bills-expenses-notes.md` | 752 | Bills, expenses, credit/debit notes |
-| `quotes-payments-remaining.md` | 788 | Quotes, payments, payslips, journals, reports, entities |
+| File | Content |
+|------|---------|
+| `skills/wafeq-api/SKILL.md` | Main entrypoint, quick reference, common workflows |
+| `skills/wafeq-api/references/core-concepts.md` | Auth, OAuth2, idempotency, guides, use cases |
+| `skills/wafeq-api/references/enums.md` | All 18 enum types with values |
+| `skills/wafeq-api/references/invoices.md` | Standard + bulk + simplified invoices |
+| `skills/wafeq-api/references/accounts-banking-contacts.md` | Accounts, banking, contacts, beneficiaries |
+| `skills/wafeq-api/references/bills-expenses-notes.md` | Bills, expenses, credit/debit notes |
+| `skills/wafeq-api/references/quotes-payments-remaining.md` | Quotes, payments, payslips, journals, reports, entities |
+| `openclaw.plugin.json` | ClawHub registry metadata |
+| `scripts/setup.sh` | API key validation script |
 
 ## License
 
